@@ -378,7 +378,7 @@ const App = () => {
     return (
         <div className="bg-white max-w-[1320px] mx-auto flex md:flex-row flex-col max-md:items-center gap-4 px-4 md:px-4 lg:px-12 lg:py-16 py-8">
             {/* Overlay for mobile */}
-            {sidebarOpen && <div className="fixed inset-0 bg-black/40 z-90 md:hidden" onClick={() => setSidebarOpen(false)}></div>}
+            {sidebarOpen && <div className="fixed inset-0 bg-black/40 z-99 md:hidden" onClick={() => setSidebarOpen(false)}></div>}
 
             <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
