@@ -23,7 +23,7 @@ export default function Contact() {
                     <div className="flex flex-col md:flex-row gap-6 lg:gap-10 p-6">
 
                         <div
-                            className="md:w-[45%] w-full rounded-lg text-white p-6 md:p-10 flex flex-col justify-between"
+                            className="md:w-[45%] w-full rounded-lg text-white p-6 md:p-10 flex flex-col justify-between text-left"
                             style={{
                                 background:
                                     "linear-gradient(135deg, #032F6E 0%, #6B6EF3 100%)",
@@ -31,35 +31,35 @@ export default function Contact() {
                         >
                             {/* Heading */}
                             <div>
-                                <h3 className="font-semibold text-2xl md:text-3xl text-center md:text-left">
+                                <h3 className="font-semibold text-2xl md:text-3xl text-left">
                                     Contact Information
                                 </h3>
 
-                                <p className="text-sm md:text-base mt-2 text-center md:text-left opacity-80 leading-relaxed">
+                                <p className="text-sm md:text-base mt-2 text-left opacity-80 leading-relaxed">
                                     Say something to start a live chat!
                                 </p>
                             </div>
 
                             {/* Contact Info */}
-                            <ul className="flex flex-col gap-6 mt-10">
+                            <ul className="flex flex-col gap-6 mt-10 items-start">
 
-                                <li className="flex items-center gap-4 justify-start font-semibold text-base md:text-base">
-                                    <Phone size={24} className="md:w-5 md:h-5 shrink-0" />
-                                    <a href="tel:+10123456789" className="wrap-break-words">
+                                <li className="flex items-center gap-4 justify-start font-semibold text-base">
+                                    <Phone size={24} className="shrink-0" />
+                                    <a href="tel:+10123456789" className="">
                                         +1012 3456 789
                                     </a>
                                 </li>
 
-                                <li className="flex items-center gap-4 justify-start font-semibold text-base md:text-base">
-                                    <Mail size={24} className="md:w-5 md:h-5 shrink-0" />
-                                    <a href="mailto:demo@gmail.com" className="wrap-break-words">
+                                <li className="flex items-center gap-4 justify-start font-semibold text-base">
+                                    <Mail size={24} className="shrink-0" />
+                                    <a href="mailto:demo@gmail.com" className="">
                                         demo@gmail.com
                                     </a>
                                 </li>
 
-                                <li className="flex items-start gap-4 justify-start font-semibold text-base md:text-base text-center md:text-left">
-                                    <MapPin size={24} className="md:w-5 md:h-5 shrink-0 mt-1" />
-                                    <span className="leading-relaxed">
+                                <li className="flex items-start gap-4 justify-start font-semibold text-base text-left">
+                                    <MapPin size={24} className="shrink-0 mt-1" />
+                                    <span className="leading-relaxed text-left">
                                         132 Dartmouth Street Boston, Massachusetts 02156 United States
                                     </span>
                                 </li>
@@ -67,7 +67,7 @@ export default function Contact() {
                             </ul>
 
                             {/* Social Icons */}
-                            <div className="flex flex-wrap gap-4 mt-10 justify-center md:justify-start">
+                            <div className="flex flex-wrap gap-4 mt-10 justify-start">
 
                                 {[
                                     "ri-twitter-x-line",
