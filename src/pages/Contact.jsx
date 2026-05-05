@@ -43,21 +43,21 @@ export default function Contact() {
                             {/* Contact Info */}
                             <ul className="flex flex-col gap-6 mt-10">
 
-                                <li className="flex items-center gap-4 justify-center md:justify-start font-semibold text-base md:text-base">
+                                <li className="flex items-center gap-4 justify-start font-semibold text-base md:text-base">
                                     <Phone size={24} className="md:w-5 md:h-5 shrink-0" />
                                     <a href="tel:+10123456789" className="wrap-break-words">
                                         +1012 3456 789
                                     </a>
                                 </li>
 
-                                <li className="flex items-center gap-4 justify-center md:justify-start font-semibold text-base md:text-base">
+                                <li className="flex items-center gap-4 justify-start font-semibold text-base md:text-base">
                                     <Mail size={24} className="md:w-5 md:h-5 shrink-0" />
                                     <a href="mailto:demo@gmail.com" className="wrap-break-words">
                                         demo@gmail.com
                                     </a>
                                 </li>
 
-                                <li className="flex items-start gap-4 justify-center md:justify-start font-semibold text-base md:text-base text-center md:text-left">
+                                <li className="flex items-start gap-4 justify-start font-semibold text-base md:text-base text-center md:text-left">
                                     <MapPin size={24} className="md:w-5 md:h-5 shrink-0 mt-1" />
                                     <span className="leading-relaxed">
                                         132 Dartmouth Street Boston, Massachusetts 02156 United States
