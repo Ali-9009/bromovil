@@ -9,44 +9,12 @@ export default function Plans() {
     const plans = [
         {
             id: 3,
-            gb: "25GB",
+            gb: "4GB",
             type: "Basic",
-            price: 239,
-            gigas: 24,
-            payment: 269,
-            img: "/assets/plan-card-2.png",
-            icons: [
-                { icon: "ri-facebook-circle-fill", color: "text-blue-600" },
-                { icon: "ri-messenger-fill", color: "text-blue-600" },
-                { icon: "ri-whatsapp-fill", color: "text-green-500" },
-                { icon: "ri-instagram-fill", color: "text-pink-500" },
-                { icon: "ri-snapchat-fill", color: "text-yellow-400" },
-                { icon: "ri-telegram-fill", color: "text-sky-500" },
-                { icon: "ri-twitter-x-fill", color: "text-black" },
-            ],
-        },
-        {
-            id: 1,
-            gb: "15GB",
-            type: "Premium",
-            price: 99,
+            price: 13.84,
             gigas: 2,
-            payment: 130,
-            img: "/assets/plan-card.png",
-            icons: [
-                { icon: "ri-facebook-circle-fill", color: "text-blue-600" },
-                { icon: "ri-whatsapp-fill", color: "text-green-500" },
-                { icon: "ri-twitter-x-fill", color: "text-black" },
-            ],
-        },
-        {
-            id: 2,
-            gb: "45GB",
-            type: "Pro",
-            price: 299,
-            gigas: 35,
-            payment: 329,
-            img: "/assets/plan-card-1.png",
+            payment: 269,
+            img: "/assets/plan-img.png",
             icons: [
                 { icon: "ri-facebook-circle-fill", color: "text-blue-600" },
                 { icon: "ri-messenger-fill", color: "text-blue-600" },
@@ -59,12 +27,12 @@ export default function Plans() {
         },
         {
             id: 4,
-            gb: "10GB",
+            gb: "36GB",
             type: "Starter",
-            price: 250,
+            price: 14.48,
             gigas: 12,
             payment: 269,
-            img: "/assets/plan-card-3.png",
+            img: "/assets/plan-img.png",
             icons: [
                 { icon: "ri-facebook-circle-fill", color: "text-blue-600" },
                 { icon: "ri-messenger-fill", color: "text-blue-600" },
@@ -75,6 +43,40 @@ export default function Plans() {
                 { icon: "ri-twitter-x-fill", color: "text-black" },
             ],
         },
+        {
+            id: 1,
+            gb: "48GB",
+            type: "Premium",
+            price: 5.73,
+            gigas: 24,
+            payment: 130,
+            img: "/assets/plan-img.png",
+            icons: [
+                { icon: "ri-facebook-circle-fill", color: "text-blue-600" },
+                { icon: "ri-whatsapp-fill", color: "text-green-500" },
+                { icon: "ri-twitter-x-fill", color: "text-black" },
+            ],
+        },
+        {
+            id: 2,
+            gb: "70GB",
+            type: "Pro",
+            price: 17.32,
+            gigas: 35,
+            payment: 329,
+            img: "/assets/plan-img.png",
+            icons: [
+                { icon: "ri-facebook-circle-fill", color: "text-blue-600" },
+                { icon: "ri-messenger-fill", color: "text-blue-600" },
+                { icon: "ri-whatsapp-fill", color: "text-green-500" },
+                { icon: "ri-instagram-fill", color: "text-pink-500" },
+                { icon: "ri-snapchat-fill", color: "text-yellow-400" },
+                { icon: "ri-telegram-fill", color: "text-sky-500" },
+                { icon: "ri-twitter-x-fill", color: "text-black" },
+            ],
+        },
+
+        
     ];
 
     const handleBuy = (plan) => {

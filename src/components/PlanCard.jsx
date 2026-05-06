@@ -1,3 +1,5 @@
+import Button from "./PrimaryBtn";
+
 export default function PlanCard({ plan, onBuy }) {
     return (
         <div className="group w-full max-w-sm bg-white rounded-sm overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
@@ -5,21 +7,33 @@ export default function PlanCard({ plan, onBuy }) {
             {/* TOP BANNER */}
             <div className="bg-linear-to-r from-purple-500 to-indigo-500 text-white text-center py-1 px-4 font-semibold text-sm">
                 By bringing your number <br />
-                <span className="text-cyan-300 font-bold">DOUBLE GIGAS</span>
+                <span className="text-cyan-300 font-bold">DOUBLE DATA</span>
             </div>
 
             {/* IMAGE / MAIN */}
-            <div className="relative flex items-center justify-center py-1">
-                <img
-                    src={plan.img}
-                    alt="plan"
-                    className="w-40 h-40 object-contain"
-                />
+            <div className="relative rounded-2xl overflow-hidden flex items-center justify-center py-1">
+                <img src={plan.img} />
+
+                {/* CONTENT ON IMAGE */}
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
+                    {/* {plan.type}
+                    <p className="text-sm opacity-90">
+                        Power for the Everyday Hustle
+                    </p> */}
+                    <h1 className="text-5xl font-bold mt-2">
+                        {plan.gb}
+                    </h1>
+
+                    {/* <p className="text-lg mt-2">
+                        ${plan.price}
+                        <span className="text-sm">/month</span>
+                    </p> */}
+                </div>
             </div>
 
             {/* MID BANNER */}
             <div className="bg-linear-to-r from-purple-500 to-indigo-500 text-white text-center py-1 px-4">
-                <p className="text-cyan-300 font-bold text-lg">{plan.gigas} GIGAS</p>
+                {/* <p className="text-cyan-300 font-bold text-lg">{plan.gigas} GB</p> */}
                 <p className="text-md font-bold">
                     WITHOUT PORTING YOUR NUMBER
                 </p>
@@ -67,16 +81,11 @@ export default function PlanCard({ plan, onBuy }) {
                     <span className="text-lg ml-1">USD</span>
                 </h2>
 
-                <button
-                    onClick={() => onBuy(plan)}
-                    className="mt-5 w-full bg-yellow-300 text-(--secondary-color) font-bold py-3 rounded-xl"
-                >
-                    BUY
-                </button>
+                <Button onClick={() => onBuy(plan)} text="BUY" className="mt-4 w-full" />
 
-                <p className="text-xs text-gray-500 mt-3">
+                {/* <p className="text-xs text-gray-500 mt-3">
                     Price without auto-recharge or early payment: <strong>${plan.payment}/Month</strong>
-                </p>
+                </p> */}
             </div>
         </div>
     );

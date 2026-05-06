@@ -35,8 +35,8 @@ export default function PlanModal({ isOpen, onClose, plan }) {
                     </div>
 
                     {/* PRICE */}
-                    <h2 className="text-2xl font-bold text-green-600">
-                        ${plan.currency}{Number(plan.price).toLocaleString()}
+                    <h2 className="text-lg font-bold text-green-600">
+                        ${plan.currency}{Number(plan.price).toLocaleString()}USD
                     </h2>
                 </div>
 
