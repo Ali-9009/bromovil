@@ -9,9 +9,9 @@ export default function Plans() {
     const plans = [
         {
             id: 3,
-            gb: "4GB",
+            gb: "1GB",
             type: "Basic",
-            price: 13.84,
+            price: 15.00,
             gigas: 2,
             payment: 269,
             img: "/assets/plan-img.png",
@@ -27,9 +27,9 @@ export default function Plans() {
         },
         {
             id: 4,
-            gb: "36GB",
+            gb: "5GB",
             type: "Starter",
-            price: 14.48,
+            price: 29.00,
             gigas: 12,
             payment: 269,
             img: "/assets/plan-img.png",
@@ -45,9 +45,9 @@ export default function Plans() {
         },
         {
             id: 1,
-            gb: "48GB",
+            gb: "15GB",
             type: "Premium",
-            price: 5.73,
+            price: 39.00,
             gigas: 24,
             payment: 130,
             img: "/assets/plan-img.png",
@@ -59,9 +59,9 @@ export default function Plans() {
         },
         {
             id: 2,
-            gb: "70GB",
+            gb: "30GB",
             type: "Pro",
-            price: 17.32,
+            price: 59.00,
             gigas: 35,
             payment: 329,
             img: "/assets/plan-img.png",

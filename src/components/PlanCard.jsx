@@ -54,10 +54,10 @@ export default function PlanCard({ plan, onBuy }) {
                     ))}
                 </div>
 
-                <p className="text-sm text-gray-600">
+                {/* <p className="text-sm text-gray-600">
                     <span className="font-semibold">45,450 min.</span> +{" "}
                     <span className="font-semibold">1,750 SMS</span>
-                </p>
+                </p> */}
 
                 <div className="flex justify-between mt-5 text-xs text-gray-600">
                     <div className="flex flex-col items-center gap-1">
