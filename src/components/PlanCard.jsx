@@ -64,7 +64,7 @@ export default function PlanCard({ plan, onBuy }) {
 
                 <h2 className="text-4xl font-bold text-purple-600 mt-6">
                     ${plan.price}
-                    <span className="text-lg ml-1">MXN</span>
+                    <span className="text-lg ml-1">USD</span>
                 </h2>
 
                 <button
