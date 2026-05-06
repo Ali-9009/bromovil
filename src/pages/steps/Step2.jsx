@@ -42,7 +42,7 @@ export default function Step2() {
 
                     <p className="text-white mt-2">
                         {selectedPlanData?.currency}
-                        {selectedPlanData?.price}/month
+                        ${selectedPlanData?.price}/month
                     </p>
                 </div>
 
